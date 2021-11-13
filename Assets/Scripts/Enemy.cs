@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     GameObject player;
+    ParticleSystem hitEffect;
     [Tooltip("Set enemy speed towards the player.")]
     [SerializeField] float enemySpeed = 1;
     [Tooltip("Enemy hit points.")]
@@ -18,20 +19,21 @@ public class Enemy : MonoBehaviour
     void Start()
     {
        player = GameObject.FindGameObjectWithTag("Player");
+       hitEffect = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
+
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnParticleTrigger()
     {
-        if (collision.gameObject.tag == "Bullet")
-        {
-            hitPoints -= playerDamage;
-        }
+        Debug.Log("Collided.");
+        hitPoints -= playerDamage;
+        hitEffect.Play();
     }
 
     public static void setPlayerDamage(int damage)
