@@ -12,14 +12,14 @@ public class Enemy : MonoBehaviour
     [Tooltip("Enemy hit points.")]
     [SerializeField] int hitPoints = 10;
 
-    static int playerDamage;
+    static int playerDamage = 1;
 
 
     // Start is called before the first frame update
     void Start()
     {
        player = GameObject.FindGameObjectWithTag("Player");
-       hitEffect = GetComponent<ParticleSystem>();
+       hitEffect = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -29,15 +29,24 @@ public class Enemy : MonoBehaviour
 
     }
 
-    private void OnParticleTrigger()
+    private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Collided.");
         hitPoints -= playerDamage;
         hitEffect.Play();
+        Debug.Log(hitPoints);
+        if (hitPoints <= 0)
+        {
+            DestroyEnemy();
+        }
     }
 
     public static void setPlayerDamage(int damage)
     {
         Enemy.playerDamage = damage;
+    }
+
+    private void DestroyEnemy()
+    {
+        Destroy(this.gameObject);
     }
 }
