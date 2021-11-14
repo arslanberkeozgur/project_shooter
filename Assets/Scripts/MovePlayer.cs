@@ -22,6 +22,15 @@ public class MovePlayer : MonoBehaviour
         float xtranslate = transform.position.x + xOffset;
         float ztranslate = transform.position.z + zOffset;
 
+        Vector3 newMouse = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
+        Vector3 worldMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.LookAt(worldMouse);
+        Debug.Log(worldMouse);
+        
+
+
+
+
         transform.position = new Vector3(xtranslate, 0, ztranslate);
 
     }
