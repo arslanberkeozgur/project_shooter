@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Shootable
+=======
+  - Bullet
+>>>>>>> bc22096f5311037425396c648bc7f4dc3a4b9101
   layers:
   - Default
   - TransparentFX

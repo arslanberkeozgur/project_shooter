@@ -16,10 +16,13 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xtranslate = Input.GetAxis("Horizontal") * Time.deltaTime;
-        float ztranslate = Input.GetAxis("Vertical") * Time.deltaTime;
+        float xOffset = Input.GetAxis("Horizontal") * Time.deltaTime * speedFactor;
+        float zOffset = Input.GetAxis("Vertical") * Time.deltaTime * speedFactor;
 
-        rb.velocity = new Vector3(xtranslate * speedFactor, 0, ztranslate * speedFactor);
+        float xtranslate = transform.position.x + xOffset;
+        float ztranslate = transform.position.z + zOffset;
+
+        transform.position = new Vector3(xtranslate, 0, ztranslate);
 
     }
 }

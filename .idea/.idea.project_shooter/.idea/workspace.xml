@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a0b3a269-7464-4c90-a4e2-a19be0ad571c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
+=======
+    <list default="true" id="e9caf32f-6b07-4ff0-ba79-df14c5527673" name="Changes" comment="" />
+>>>>>>> bc22096f5311037425396c648bc7f4dc3a4b9101
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +16,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="20sPQHzwXH7VJxWiBW0TUShxY4r" />
+=======
+  <component name="ProjectId" id="20uAHIXvJL6dIHf6Sqq7ihotUyP" />
+>>>>>>> bc22096f5311037425396c648bc7f4dc3a4b9101
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,12 +57,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="a0b3a269-7464-4c90-a4e2-a19be0ad571c" name="Changes" comment="" />
       <created>1636830307335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636830307335</updated>
       <workItem from="1636830319278" duration="3050000" />
+=======
+      <changelist id="e9caf32f-6b07-4ff0-ba79-df14c5527673" name="Changes" comment="" />
+      <created>1636884013558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636884013558</updated>
+      <workItem from="1636884043236" duration="16000" />
+>>>>>>> bc22096f5311037425396c648bc7f4dc3a4b9101
     </task>
     <servers />
   </component>
@@ -64,6 +81,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -75,6 +93,8 @@
       </map>
     </option>
   </component>
+=======
+>>>>>>> bc22096f5311037425396c648bc7f4dc3a4b9101
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
